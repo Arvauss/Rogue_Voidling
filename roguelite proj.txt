@@ -34,3 +34,8 @@ Shop:
 
 Arena:
 	Fight previously defeated bosses.
+	
+Mechanics:
+	Wall-bounce: 
+		Movement, 'absorb' momentum when coming into contact with wall, jump to consume stored momentum
+		for boost. Absorbed momentum persists for brief period after losing contact, perishes after.

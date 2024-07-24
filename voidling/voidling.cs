@@ -3,14 +3,21 @@ using System;
 
 public partial class voidling : CharacterBody2D
 {
-	public const float Speed = 300.0f;
-	public const float JumpVelocity = -400.0f;
+	[Export]
+	public float Speed {get; set;} = 300.0f;
+	[Export]
+	public float JumpVelocity {get; set;} = -400.0f;
 
 	// Get the gravity from the project settings to be synced with RigidBody nodes.
 	public float gravity = ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
 
 	public override void _PhysicsProcess(double delta)
 	{
+		GetInput(delta);
+		MoveAndSlide();
+	}
+
+	public void GetInput(double delta){
 		Vector2 velocity = Velocity;
 
 		// Add the gravity.
@@ -36,6 +43,5 @@ public partial class voidling : CharacterBody2D
 		}
 
 		Velocity = velocity;
-		MoveAndSlide();
 	}
 }

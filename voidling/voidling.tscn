@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://j75dufdi1bae"]
 
 [ext_resource type="Script" path="res://voidling/voidling.cs" id="1_xqrgq"]
-[ext_resource type="Texture2D" uid="uid://2crfychccfh3" path="res://sprites/bruv.png" id="2_5taic"]
+[ext_resource type="Texture2D" uid="uid://dbfeqs80giabp" path="res://sprites/bruv.png" id="2_5taic"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4tfgw"]
 size = Vector2(124, 128)

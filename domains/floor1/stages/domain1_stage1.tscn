@@ -1,6 +1,5 @@
-[gd_scene load_steps=4 format=3 uid="uid://bfm6sc8k7kpr8"]
+[gd_scene load_steps=3 format=3 uid="uid://bfm6sc8k7kpr8"]
 
-[ext_resource type="Texture2D" uid="uid://ccim2nfb4ksaf" path="res://icon.svg" id="1_0a873"]
 [ext_resource type="PackedScene" uid="uid://j75dufdi1bae" path="res://voidling/voidling.tscn" id="2_qbiso"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ql8xq"]
@@ -11,15 +10,15 @@ size = Vector2(1161, 20)
 [node name="Voidling" parent="." instance=ExtResource("2_qbiso")]
 position = Vector2(377, 109)
 
-[node name="Area2D" type="StaticBody2D" parent="."]
+[node name="Floor" type="StaticBody2D" parent="."]
 
-[node name="Floor" type="TextureRect" parent="Area2D"]
-offset_left = -1.0
-offset_top = 517.0
-offset_right = 1152.0
-offset_bottom = 645.0
-texture = ExtResource("1_0a873")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
 position = Vector2(582, 528)
 shape = SubResource("RectangleShape2D_ql8xq")
+
+[node name="ColorRect" type="ColorRect" parent="Floor"]
+offset_left = -38.0
+offset_top = 519.0
+offset_right = 1172.0
+offset_bottom = 664.0
+color = Color(0.327661, 7.26774e-05, 0.327693, 1)

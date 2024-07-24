@@ -6,11 +6,11 @@ Theme(s):
 	Boss is a character who is in control of domain, threatens equilibrium of universe
 	Player is tool of entropy
 
-Stage based levels, each stage hand crafted but randomly selected out of pool
-Each stage contains elite enemy, drops currency to be used outside of run, drops random item to buff player in current run
+Stage("Floor") based levels, each floor hand crafted but randomly selected out of pool
+Each floor contains elite enemy, drops currency to be used outside of run, drops random item to buff player in current run
 Floors contain several stages, each floor with diff theme
 Final stage of floor contains boss, dropping more coins
-Floor and stage affects enemies' numbers, stats, unique effects(?)
+Floor and domain affects enemies' numbers, stats, unique effects(?)
 
 Player:
 	Weapons:

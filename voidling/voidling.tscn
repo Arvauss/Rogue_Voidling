@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://j75dufdi1bae"]
+
+[ext_resource type="Script" path="res://voidling/voidling.cs" id="1_xqrgq"]
+[ext_resource type="Texture2D" uid="uid://2crfychccfh3" path="res://sprites/bruv.png" id="2_5taic"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4tfgw"]
+size = Vector2(124, 128)
+
+[node name="Voidling" type="CharacterBody2D"]
+script = ExtResource("1_xqrgq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_4tfgw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.499995, 0.999996)
+scale = Vector2(1.95313, 2)
+texture = ExtResource("2_5taic")

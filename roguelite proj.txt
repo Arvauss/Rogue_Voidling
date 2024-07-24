@@ -1,0 +1,36 @@
+2D platformer / roguelite / ror
+
+Theme(s):
+	Player as void/time entity
+	Progressing through domain("tower") to reach final floor to assassinate boss
+	Boss is a character who is in control of domain, threatens equilibrium of universe
+	Player is tool of entropy
+
+Stage based levels, each stage hand crafted but randomly selected out of pool
+Each stage contains elite enemy, drops currency to be used outside of run, drops random item to buff player in current run
+Floors contain several stages, each floor with diff theme
+Final stage of floor contains boss, dropping more coins
+Floor and stage affects enemies' numbers, stats, unique effects(?)
+
+Player:
+	Weapons:
+		Sword - basic melee, sweeping, micro-stuns
+		Parry - perfect timing blocks dmg, critical damage, stuns
+		Javelin - basic ranged, charge based, pick up or wait to recharge, micro-stuns
+		Javelin power shot - consume remaining charges, dmg depends on num. charges consumed
+	Pickups:
+		Dropped by elites, bosses
+		Minor artifact: medium stat bonuses
+		Major artifact: powerful, but with drawback, boss drop
+	Level:
+		Level incrementally affects base stats
+		Perk every x levels (??)
+		Gained through experience gain or num of artifacts
+		
+
+Shop:
+	Available outside of runs
+	Spend money on permanent minor stat boosts/weapons	
+
+Arena:
+	Fight previously defeated bosses.
